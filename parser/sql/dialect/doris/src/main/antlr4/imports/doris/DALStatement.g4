@@ -324,6 +324,15 @@ repairTable
     : REPAIR (NO_WRITE_TO_BINLOG | LOCAL)? tableOrTables tableList QUICK? EXTENDED? USE_FRM?
     ;
 
+alterSystemAddFollower
+    : ALTER SYSTEM ADD FOLLOWER followerSpec
+    ;
+
+followerSpec
+    : STRING (COLON_ NUMBER_)
+    | STRING
+    ;
+
 alterResourceGroup
     : ALTER RESOURCE GROUP groupName (VCPU EQ_? vcpuSpec (COMMA_ vcpuSpec)*)? (THREAD_PRIORITY EQ_? NUMBER_)?
     (ENABLE | DISABLE FORCE?)?
