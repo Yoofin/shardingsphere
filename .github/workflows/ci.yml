@@ -65,12 +65,18 @@ jobs:
           restore-keys: |
             apache-shardingsphere-maven-third-party-
       - name: Build Project with Maven
-        run: ./mvnw clean install -B -ntp -DskipTests -T1C -X
+        run: ./mvnw clean install -B -ntp -DskipTests -T1C
       - name: Setup JDK 8 for Test
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: 8
+      - name: Upload Build Log on Failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: maven-build-log
+          path: maven-build.log
       - name: Run Tests with JDK 8
         run: ./mvnw install -T1C -B -ntp -fae
       - name: Upload Failsafe Reports
