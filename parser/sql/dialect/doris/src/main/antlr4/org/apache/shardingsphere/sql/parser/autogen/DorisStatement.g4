@@ -17,7 +17,7 @@
 
 grammar DorisStatement;
 
-import Comments, DDLStatement, TCLStatement, DCLStatement, RLStatement;
+import Comments, DALStatement, DDLStatement, TCLStatement, DCLStatement, RLStatement;
 
 execute
     : (select
