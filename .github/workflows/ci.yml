@@ -65,7 +65,7 @@ jobs:
           restore-keys: |
             apache-shardingsphere-maven-third-party-
       - name: Build Project with Maven
-        run: ./mvnw clean install -B -ntp -DskipTests -T1C
+        run: ./mvnw clean install -B -ntp -DskipTests -T1C -X
       - name: Setup JDK 8 for Test
         uses: actions/setup-java@v4
         with:
