@@ -73,7 +73,6 @@ execute
     | alterServer
     | alterSequence
     | alterView
-    | alterSystem
     | comment
     | createDatabase
     | createFunction
