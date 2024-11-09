@@ -324,8 +324,16 @@ repairTable
     : REPAIR (NO_WRITE_TO_BINLOG | LOCAL)? tableOrTables tableList QUICK? EXTENDED? USE_FRM?
     ;
 
-alterSystemAddFollower
-    : ALTER SYSTEM ADD FOLLOWER followerSpec
+alterSystem
+    : ALTER SYSTEM alterSystemCommand
+    ;
+
+alterSystemCommand
+    : addFollowerCommand
+    ;
+
+addFollowerCommand
+    : ADD FOLLOWER followerSpec
     ;
 
 followerSpec
