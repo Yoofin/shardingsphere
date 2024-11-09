@@ -325,15 +325,7 @@ repairTable
     ;
 
 alterSystem
-    : ALTER SYSTEM alterSystemCommand
-    ;
-
-alterSystemCommand
-    : addFollowerCommand
-    ;
-
-addFollowerCommand
-    : ADD FOLLOWER followerSpec
+    : ALTER SYSTEM ADD FOLLOWER followerSpec
     ;
 
 followerSpec
