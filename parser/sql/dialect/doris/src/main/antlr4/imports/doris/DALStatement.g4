@@ -325,7 +325,7 @@ repairTable
     ;
 
 alterSystem
-    : ALTER SYSTEM ADD FOLLOWER '"' 'host_ip:9010' '"'
+    : ALTER SYSTEM ADD FOLLOWER STRING
     ;
 
 alterResourceGroup
