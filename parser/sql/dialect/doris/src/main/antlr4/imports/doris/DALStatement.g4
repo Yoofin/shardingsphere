@@ -337,8 +337,7 @@ addFollowerCommand
     ;
 
 followerSpec
-    : STRING (COLON_ NUMBER_)
-    | STRING
+    : STRING (COLON_ NUMBER_)?
     ;
 
 alterResourceGroup
