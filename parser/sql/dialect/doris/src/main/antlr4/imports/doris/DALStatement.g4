@@ -325,11 +325,7 @@ repairTable
     ;
 
 alterSystem
-    : ALTER SYSTEM ADD FOLLOWER followerSpec
-    ;
-
-followerSpec
-    : STRING (COLON_ NUMBER_)?
+    : ALTER SYSTEM ADD FOLLOWER '"' 'host_ip:9010' '"'
     ;
 
 alterResourceGroup
