@@ -66,6 +66,7 @@ execute
     | createUser
     | dropUser
     | alterUser
+    | alterSystem
     | renameUser
     | createRole
     | dropRole
