@@ -48,7 +48,6 @@ jobs:
 
   ci:
     name: CI - Compile by JDK 11 and Run on JDK 8
-    if: github.repository == 'apache/shardingsphere'
     needs: global-environment
     runs-on: ubuntu-latest
     timeout-minutes: 30
