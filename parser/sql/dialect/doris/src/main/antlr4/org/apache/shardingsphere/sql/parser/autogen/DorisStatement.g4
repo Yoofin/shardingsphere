@@ -122,6 +122,7 @@ execute
     | xaRollback
     | xaEnd
     | xaRecovery
+    | recover
     | createLoadableFunction
     | createTablespace
     | alterTablespace
