@@ -63,7 +63,7 @@ property
     ;
 
 recoverStatement
-    : RECOVER DATABASE databaseName=identifier
+    : RECOVER DATABASE databaseName
     ;
 // DORIS ADDED END
 
