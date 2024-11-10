@@ -17,7 +17,7 @@
   -->
 
 <sql-parser-test-cases>
-    <recover sql-case-id = "recover_database_by_name">
+    <recover-database sql-case-id = "recover_database_by_name">
         <database name="example_db" start-index="17" stop-index="26" />
-    </recover>
+    </recover-database>
 </sql-parser-test-cases>
