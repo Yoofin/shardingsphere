@@ -61,6 +61,10 @@ properties
 property
     : (identifier | SINGLE_QUOTED_TEXT) EQ_? literals
     ;
+
+recoverStatement
+    : RECOVER DATABASE databaseName=identifier
+    ;
 // DORIS ADDED END
 
 startTransaction
