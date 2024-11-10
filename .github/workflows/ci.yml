@@ -73,3 +73,9 @@ jobs:
           java-version: 8
       - name: Run Tests with JDK 8
         run: ./mvnw install -T1C -B -ntp -fae
+      - name: Upload Failsafe Reports
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: failsafe-reports
+          path: parser/sql/dialect/doris/target/failsafe-reports
