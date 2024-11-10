@@ -18,6 +18,7 @@
 package org.apache.shardingsphere.test.it.sql.parser.internal.cases.parser.jaxb.statement.ddl;
 
 import org.apache.shardingsphere.test.it.sql.parser.internal.cases.parser.jaxb.SQLParserTestCase;
+import lombok.Getter;
 
 /**
  * Recover database statement test case.
