@@ -20,6 +20,10 @@ package org.apache.shardingsphere.test.it.sql.parser.internal.cases.parser.jaxb.
 import org.apache.shardingsphere.test.it.sql.parser.internal.cases.parser.jaxb.SQLParserTestCase;
 import lombok.Getter;
 
+import javax.xml.bind.annotation.XmlElement;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Recover database statement test case.
  */
